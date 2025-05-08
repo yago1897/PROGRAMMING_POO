@@ -1,7 +1,8 @@
 SEM2 - Tarea: Asignación No. 2 Implementación de Clases Básicas para una Plataforma e-Commerce
 
-Este repositorio contiene una implementación de las clases "Producto" "Usuario" y "Carrito" con sus atributos, métodos y contructores solicitados en el requerimiento. Se incluyen las capturas de las clases como se aprecia en las siguientes imágenes
-La tecnología empleada para efectos de práctica es el lenguaje C# de la plataforma .Net-Core versión 8, está realizada en arquitectura de N-Capas donde,  donde las clases mencionadas están en la capa de datos llamada "Services.Infraestructure"
+Este repositorio contiene una implementación de las clases "Producto" "Usuario" y "Carrito" con sus atributos, métodos y contructores solicitados en el requerimiento. Se incluyen las capturas de las clases como se aprecia en las siguientes imágenes.
+
+La tecnología empleada para efectos de práctica es el lenguaje C# de la plataforma .Net-Core versión 8, está realizada en arquitectura de N-Capas, donde las clases mencionadas están en la capa de datos llamada "Services.Infraestructure"
 
 Clase Producto
 ![image](https://github.com/user-attachments/assets/eaffe95f-7484-4392-a781-afbe29022681)
