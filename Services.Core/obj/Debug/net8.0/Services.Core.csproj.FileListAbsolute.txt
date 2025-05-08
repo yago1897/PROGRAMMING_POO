@@ -1,0 +1,11 @@
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\bin\Debug\net8.0\Services.Core.deps.json
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\bin\Debug\net8.0\Services.Core.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\bin\Debug\net8.0\Services.Core.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.AssemblyInfoInputs.cache
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.AssemblyInfo.cs
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.csproj.CoreCompileInputs.cache
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\refint\Services.Core.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\ref\Services.Core.dll

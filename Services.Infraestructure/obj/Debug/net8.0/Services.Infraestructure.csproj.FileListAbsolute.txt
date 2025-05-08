@@ -1,0 +1,11 @@
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\bin\Debug\net8.0\Services.Infraestructure.deps.json
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\bin\Debug\net8.0\Services.Infraestructure.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\bin\Debug\net8.0\Services.Infraestructure.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.AssemblyInfo.cs
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\refint\Services.Infraestructure.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\Services.Infraestructure.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Infraestructure\obj\Debug\net8.0\ref\Services.Infraestructure.dll
