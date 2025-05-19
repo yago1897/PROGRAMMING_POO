@@ -1,3 +1,37 @@
+SEMANA No. 4 – Pilares de la Programación Orientada a Objetos - Polimorfismo y sobrecarga
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Suguiendo con los mismos lineamientos que modela los componentes principales de una plataforma e-Commerce, aplicando los principios de la **Programación Orientada a Objetos (POO)** y más especificamente en este caso Polimorfismo, sobrecarga y sobreescritura de métodos en la Plataforma e-Commerce.
+
+### Funcionalidades Implementadas
+
+#### Implementación de Polimorfismo:
+Se ha creado la clase `GestorProductos`, la cual permite procesar objetos derivados de la clase base `Producto`. Gracias al polimorfismo, se puede tratar a `ProductoFisico` y `ProductoDigital` como objetos del tipo base y ejecutar métodos sobrescritos de manera dinámica.
+
+A continuación se presentan las imágenes de lo mencionado anteriormente teniendo en cuenta las especificaciones solicitadas en la actividad
+
+Punto 1- ### Implementación de Polimorfismo: Permitir que métodos acepten cualquier objeto que herede de Producto.
+Esto permite pasar tanto un Producto, ProductoDigital como ProductoFisico y se invocará la versión adecuada del método MostrarDetalle() si está sobreescrito que está en el punto 3 siguiendo el orden de lo solicitado en la actividad
+
+![image](https://github.com/user-attachments/assets/6715fb32-6afb-4e81-93c0-0eb2e1510e53)
+
+Punto 2- Sobrecarga de Métodos: 
+Permitir múltiples formas de agregar productos al carrito.En este caso por objeto, por ID y por nombre y precio como se solicita en la actividad, y como se aprecia en la imagen
+
+![image](https://github.com/user-attachments/assets/bd01878e-ca76-4e75-ae92-dc930007675f)
+
+Punto 3- Sobreescritura de Métodos:
+Modificar el comportamiento de un método base en las clases derivadas.
+
+Clase base: Producto
+![image](https://github.com/user-attachments/assets/236f5041-635d-4f7b-9f26-52d5ee9f3c9c)
+
+
+
+
+
+
+
 SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
@@ -45,7 +79,7 @@ Se aplicó herencia para dividir los productos y usuarios en categorías más es
 
     
 
-Con esto concluye la SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
+    Con esto concluye la SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
 
 
 
