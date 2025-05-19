@@ -18,5 +18,10 @@ namespace Services.Infraestructure.Productos
             Peso = peso;
             Dimensiones = dimensiones;
         }
+
+        public override string MostrarDetalle()
+        {
+            return base.MostrarDetalle() + $", Peso: {Peso}kg";
+        }
     }
 }

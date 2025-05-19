@@ -16,8 +16,24 @@ namespace Services.Infraestructure.Entidades
             Productos = new List<Producto>();
         }
 
+        // Se agregan por objeto Producto
         public void AgregarProducto(Producto producto)
         {
+            Productos.Add(producto);
+        }
+
+        // Por ID (simulado, normalmente buscarías en BD o lista)
+        public void AgregarProducto(int id)
+        {
+            // Simulación
+            var producto = new Producto(id, "ProductoSimulado", "Simulado", 10.0m, 5);
+            Productos.Add(producto);
+        }
+
+        // Se agregan por nombre y precio
+        public void AgregarProducto(string nombre, decimal precio)
+        {
+            var producto = new Producto(0, nombre, "Sin descripción", precio, 1);
             Productos.Add(producto);
         }
 

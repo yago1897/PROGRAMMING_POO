@@ -22,6 +22,12 @@ namespace Services.Infraestructure.Entidades
             Precio = precio;
             Stock = stock;
         }
+
+        public virtual string MostrarDetalle()
+        {
+            return $"Producto: {Nombre}, Precio: {Precio}";
+        }
+
     }
 
 }

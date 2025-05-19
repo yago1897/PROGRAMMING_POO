@@ -18,5 +18,10 @@ namespace Services.Infraestructure.Productos
             FormatoArchivo = formatoArchivo;
             TamanoMB = tamanoMB;
         }
+
+        public override string MostrarDetalle()
+        {
+            return base.MostrarDetalle() + $", Formato: {FormatoArchivo}";
+        }
     }
 }
