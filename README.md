@@ -1,3 +1,54 @@
+SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Suguiendo con los mismos lineamientos que modela los componentes principales de una plataforma e-Commerce, aplicando los principios de la **Programación Orientada a Objetos (POO)** y más especificamente en este caso la herencia.
+
+Extensión de Funcionalidades (Herencia)
+Se aplicó herencia para dividir los productos y usuarios en categorías más especializadas, reflejando diferencias funcionales.
+### Productos Especializados
+
+- **ProductoFísico**  
+  Hereda de `Producto` e incorpora:
+  - `Peso` (decimal)
+  - `Dimensiones` (string)
+
+- **ProductoDigital**  
+  Hereda de `Producto` e incorpora:
+  - `FormatoArchivo` (string)
+  - `TamanoMB` (double)
+
+### Usuarios Especializados
+
+- **Cliente**  
+  Hereda de `Usuario` y permite:
+  - Almacenar historial de compras
+  - Registrar preferencias de productos
+
+- **Administrador**  
+  Hereda de `Usuario` e incluye:
+  - Funcionalidades para gestión de inventario
+  - Aplicación de promociones a productos
+ 
+    A continuación se presentan las imágenes de lo mencionado anteriormente
+    Clase "ProductoDigital", heredada de la clase "Producto"
+    ![image](https://github.com/user-attachments/assets/475b11cf-8dc9-4c26-b5fe-caafc09ec7cc)
+
+    Clase "ProductoFisico", heredada de la clase "Producto"
+    ![image](https://github.com/user-attachments/assets/cedd7a4c-5d21-448d-86df-c27b3a7e5979)
+
+    Clase "Administrador", heredada de la clase "Usuario"
+    ![image](https://github.com/user-attachments/assets/e197e883-c798-429b-aa72-c0171ae0707f)
+
+    Clase "Cliente", heredada de la clase "Usuario"
+
+    ![image](https://github.com/user-attachments/assets/7f168e55-8705-4ce2-aa71-68d23117d596)
+
+    
+
+Con esto concluye la SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
+
+
+
 SEM2 - Tarea: Asignación No. 2 Implementación de Clases Básicas para una Plataforma e-Commerce
 
 Este repositorio contiene una implementación de las clases "Producto" "Usuario" y "Carrito" con sus atributos, métodos y contructores solicitados en el requerimiento. Se incluyen las capturas de las clases como se aprecia en las siguientes imágenes.
