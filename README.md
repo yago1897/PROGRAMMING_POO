@@ -11,7 +11,7 @@ Se ha creado la clase `GestorProductos`, la cual permite procesar objetos deriva
 A continuación se presentan las imágenes de lo mencionado anteriormente teniendo en cuenta las especificaciones solicitadas en la actividad
 
 Punto 1- ### Implementación de Polimorfismo: Permitir que métodos acepten cualquier objeto que herede de Producto.
-Esto permite pasar tanto un Producto, ProductoDigital como ProductoFisico y se invocará la versión adecuada del método MostrarDetalle() si está sobreescrito que está en el punto 3 siguiendo el orden de lo solicitado en la actividad
+Esto permite pasar tanto un Producto, ProductoDigital como ProductoFisico y se invocará la versión adecuada del método MostrarDetalle() si está sobreescrito y como se evidencia en el punto 3 siguiendo el orden de los puntos solicitados de la actividad
 
 ![image](https://github.com/user-attachments/assets/6715fb32-6afb-4e81-93c0-0eb2e1510e53)
 
@@ -26,6 +26,13 @@ Modificar el comportamiento de un método base en las clases derivadas.
 Clase base: Producto
 ![image](https://github.com/user-attachments/assets/236f5041-635d-4f7b-9f26-52d5ee9f3c9c)
 
+ProductoDigital:
+![image](https://github.com/user-attachments/assets/1b720c7a-0967-4e5c-b451-11348211497c)
+
+ProductoFisico:
+![image](https://github.com/user-attachments/assets/efb07a83-c4bc-4679-a53f-27712618defe)
+
+Con esto concluye la actividad SEMANA No. 4 – Pilares de la Programación Orientada a Objetos - Polimorfismo y sobrecarga
 
 
 
