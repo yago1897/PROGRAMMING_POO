@@ -35,7 +35,7 @@ ProductoFisico:
 Con esto concluye la actividad SEMANA No. 4 – Pilares de la Programación Orientada a Objetos - Polimorfismo y sobrecarga
 
 
-
+##----------------------------------------------------------------------------------------------------------------------------##
 
 
 
@@ -88,7 +88,7 @@ Se aplicó herencia para dividir los productos y usuarios en categorías más es
 
     Con esto concluye la SEM3 - Tarea: Asignación No. 3 Extensión de Funcionalidades mediante Herencia
 
-
+##----------------------------------------------------------------------------------------------------------------------------##
 
 SEM2 - Tarea: Asignación No. 2 Implementación de Clases Básicas para una Plataforma e-Commerce
 
