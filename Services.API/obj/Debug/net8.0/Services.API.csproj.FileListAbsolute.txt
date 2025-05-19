@@ -14,6 +14,7 @@ C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Servi
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.RazorAssemblyInfo.cache
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.RazorAssemblyInfo.cs
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.sourcelink.json
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\scopedcss\bundle\Services.API.styles.css
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\scopedcss\projectbundle\Services.API.bundle.scp.css

@@ -5,6 +5,7 @@ C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Serv
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.AssemblyInfoInputs.cache
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.AssemblyInfo.cs
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.csproj.CoreCompileInputs.cache
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.sourcelink.json
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.dll
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\refint\Services.Core.dll
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.Core\obj\Debug\net8.0\Services.Core.pdb
