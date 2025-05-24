@@ -1,3 +1,57 @@
+SEM5 - Tarea: Asignación No. 5 Aplicación de Encapsulamiento y Abstracción
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Esta asignación consiste en aplicar los principios de encapsulamiento y abstracción en un sistema de compras simplificado, compuesto por las clases Producto, Usuario y Carrito. Además, se introduce una jerarquía abstracta mediante la clase base Item, de la cual derivan ProductoFisico y ProductoDigital, representando distintos tipos de productos.
+
+🔐 Encapsulamiento Aplicado
+✔️ Clases modificadas:
+Producto
+Atributos privados: id, nombre, descripcion, precio, stock.
+
+Accesores públicos con validaciones:
+
+precio y stock no pueden ser negativos.
+
+nombre no puede estar vacío.
+
+Usuario
+Atributos privados: id, nombre, correo, contrasena.
+
+Validaciones:
+
+correo validado mediante expresión regular.
+
+contrasena debe tener al menos 6 caracteres.
+
+Carrito
+Atributo Productos encapsulado con propiedad private set.
+
+Métodos públicos para agregar productos (por objeto, por ID simulado, por nombre y precio).
+
+Cálculo del Total encapsulado a través de una propiedad readonly.
+
+🧱 Abstracción Aplicada
+🔸 Clase base abstracta: Item
+Define propiedades comunes: Id, Nombre, Precio.
+
+Constructor protegido con validaciones.
+
+Método abstracto: MostrarDetalle().
+
+🔹 Clases derivadas:
+ProductoFisico
+Propiedades adicionales: Descripcion, Stock.
+
+Implementa MostrarDetalle() con detalles de stock.
+
+ProductoDigital
+Propiedad adicional: UrlDescarga.
+
+Implementa MostrarDetalle() con detalles de descarga.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 SEMANA No. 4 – Pilares de la Programación Orientada a Objetos - Polimorfismo y sobrecarga
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
