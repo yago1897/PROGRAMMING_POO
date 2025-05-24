@@ -8,12 +8,63 @@ namespace Services.Infraestructure.Entidades
 {
     public class Producto
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Descripcion { get; set; }
-        public decimal Precio { get; set; }
-        public int Stock { get; set; }
+        private int id;
+        private string nombre;
+        private string descripcion;
+        private decimal precio;
+        private int stock;
 
+        public int Id
+        {
+            get => id;
+            set
+            {
+                if (value <= 0)
+                    throw new ArgumentException("El ID debe ser mayor que cero.");
+                id = value;
+            }
+        }
+
+        public string Nombre
+        {
+            get => nombre;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("El nombre no puede estar vacío.");
+                nombre = value;
+            }
+        }
+
+        public string Descripcion
+        {
+            get => descripcion;
+            set => descripcion = value ?? ""; // Puede estar vacío, pero no nulo
+        }
+
+        public decimal Precio
+        {
+            get => precio;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException("El precio no puede ser negativo.");
+                precio = value;
+            }
+        }
+
+        public int Stock
+        {
+            get => stock;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException("El stock no puede ser negativo.");
+                stock = value;
+            }
+        }
+
+        // Constructor
         public Producto(int id, string nombre, string descripcion, decimal precio, int stock)
         {
             Id = id;
@@ -27,7 +78,6 @@ namespace Services.Infraestructure.Entidades
         {
             return $"Producto: {Nombre}, Precio: {Precio}";
         }
-
     }
 
 }

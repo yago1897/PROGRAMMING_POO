@@ -8,47 +8,55 @@ namespace Services.Infraestructure.Entidades
 {
     public class Carrito
     {
-        public List<Producto> Productos { get; private set; }
+        private List<Producto> productos;
+        public IReadOnlyCollection<Producto> Productos => productos.AsReadOnly();
         public decimal Total => CalcularTotal();
 
         public Carrito()
         {
-            Productos = new List<Producto>();
+            productos = new List<Producto>();
         }
 
         // Se agregan por objeto Producto
         public void AgregarProducto(Producto producto)
         {
-            Productos.Add(producto);
+            if (producto == null)
+                throw new ArgumentNullException(nameof(producto));
+
+            productos.Add(producto);
         }
 
-        // Por ID (simulado, normalmente buscarías en BD o lista)
+        
         public void AgregarProducto(int id)
         {
-            // Simulación
             var producto = new Producto(id, "ProductoSimulado", "Simulado", 10.0m, 5);
-            Productos.Add(producto);
+            productos.Add(producto);
         }
 
         // Se agregan por nombre y precio
         public void AgregarProducto(string nombre, decimal precio)
         {
+            if (string.IsNullOrWhiteSpace(nombre))
+                throw new ArgumentException("El nombre no puede estar vacío.");
+            if (precio < 0)
+                throw new ArgumentException("El precio no puede ser negativo.");
+
             var producto = new Producto(0, nombre, "Sin descripción", precio, 1);
-            Productos.Add(producto);
+            productos.Add(producto);
         }
 
         public void RemoverProducto(int productoId)
         {
-            var producto = Productos.FirstOrDefault(p => p.Id == productoId);
+            var producto = productos.FirstOrDefault(p => p.Id == productoId);
             if (producto != null)
             {
-                Productos.Remove(producto);
+                productos.Remove(producto);
             }
         }
 
         private decimal CalcularTotal()
         {
-            return Productos.Sum(p => p.Precio);
+            return productos.Sum(p => p.Precio);
         }
     }
 

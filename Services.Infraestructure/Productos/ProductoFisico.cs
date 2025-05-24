@@ -1,4 +1,5 @@
-﻿using Services.Infraestructure.Entidades;
+﻿using Services.Core.Interfaces;
+using Services.Infraestructure.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,21 +8,22 @@ using System.Threading.Tasks;
 
 namespace Services.Infraestructure.Productos
 {
-    public class ProductoFisico : Producto
+    public class ProductoFisico : IItem
     {
-        public decimal Peso { get; set; }         // en kg
-        public string Dimensiones { get; set; }   // Ej: "30x20x10 cm"
+        public int Stock { get; set; }
+        public string Descripcion { get; set; }
 
-        public ProductoFisico(int id, string nombre, string descripcion, decimal precio, int stock, decimal peso, string dimensiones)
-            : base(id, nombre, descripcion, precio, stock)
+        public ProductoFisico(int id, string nombre, decimal precio, string descripcion, int stock)
+            : base(id, nombre, precio)
         {
-            Peso = peso;
-            Dimensiones = dimensiones;
+            Descripcion = descripcion ?? "";
+            if (stock < 0) throw new ArgumentException("El stock no puede ser negativo.");
+            Stock = stock;
         }
 
         public override string MostrarDetalle()
         {
-            return base.MostrarDetalle() + $", Peso: {Peso}kg";
+            return $"Producto Físico: {Nombre}, Precio: {Precio}, Stock: {Stock}";
         }
     }
 }

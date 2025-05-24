@@ -1,4 +1,5 @@
-﻿using Services.Infraestructure.Entidades;
+﻿using Services.Core.Interfaces;
+using Services.Infraestructure.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace Services.Infraestructure.Productos
 {
-    public class ProductoDigital : Producto
+    public class ProductoDigital : IItem
     {
-        public string FormatoArchivo { get; set; }   // Ej: "PDF", "MP3", "MP4"
-        public double TamanoMB { get; set; }         // en Megabytes
+        public string UrlDescarga { get; set; }
 
-        public ProductoDigital(int id, string nombre, string descripcion, decimal precio, int stock, string formatoArchivo, double tamanoMB)
-            : base(id, nombre, descripcion, precio, stock)
+        public ProductoDigital(int id, string nombre, decimal precio, string urlDescarga)
+            : base(id, nombre, precio)
         {
-            FormatoArchivo = formatoArchivo;
-            TamanoMB = tamanoMB;
+            UrlDescarga = string.IsNullOrWhiteSpace(urlDescarga)
+                ? throw new ArgumentException("Debe proporcionar una URL válida.")
+                : urlDescarga;
         }
 
         public override string MostrarDetalle()
         {
-            return base.MostrarDetalle() + $", Formato: {FormatoArchivo}";
+            return $"Producto Digital: {Nombre}, Precio: {Precio}, Descarga: {UrlDescarga}";
         }
     }
 }

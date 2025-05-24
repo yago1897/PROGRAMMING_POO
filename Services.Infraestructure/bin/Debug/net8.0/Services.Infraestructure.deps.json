@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Services.Infraestructure/1.0.0": {
+        "dependencies": {
+          "Services.Core": "1.0.0"
+        },
         "runtime": {
           "Services.Infraestructure.dll": {}
+        }
+      },
+      "Services.Core/1.0.0": {
+        "runtime": {
+          "Services.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "Services.Infraestructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
