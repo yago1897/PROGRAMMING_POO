@@ -7,6 +7,7 @@ Encapsulamiento Aplicado
 Clases modificadas:
 Clase Producto
 Atributos privados: id, nombre, descripcion, precio, stock. Accesores públicos con validaciones: precio y stock no pueden ser negativos. Nombre no puede estar vacío. como se aprecia en las imágenes
+
 ![image](https://github.com/user-attachments/assets/a5fc8355-76b0-4ce1-bd8a-8b1be8041c4d)
 ![image](https://github.com/user-attachments/assets/98419e6f-5a39-4513-aa98-d0f040509072)
 
@@ -40,7 +41,7 @@ Define propiedades comunes: Id, Nombre, Precio. Constructor protegido con valida
 
 
 
-🔹 Clases derivadas:
+Clases derivadas:
 ProductoFisico 
 Propiedades adicionales: Descripcion, Stock. Implementa MostrarDetalle() con detalles de stock.
 
