@@ -1,3 +1,62 @@
+SEM5 - Tarea: Asignación No. 5 Aplicación de Encapsulamiento y Abstracción
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Esta asignación consiste en aplicar los principios de encapsulamiento y abstracción en un sistema de compras simplificado, compuesto por las clases Producto, Usuario y Carrito. Además, se introduce una jerarquía abstracta mediante la clase base Item, de la cual derivan ProductoFisico y ProductoDigital, representando distintos tipos de productos.
+
+Encapsulamiento Aplicado
+Clases modificadas:
+Clase Producto
+Atributos privados: id, nombre, descripcion, precio, stock. Accesores públicos con validaciones: precio y stock no pueden ser negativos. Nombre no puede estar vacío. como se aprecia en las imágenes
+
+![image](https://github.com/user-attachments/assets/a5fc8355-76b0-4ce1-bd8a-8b1be8041c4d)
+![image](https://github.com/user-attachments/assets/98419e6f-5a39-4513-aa98-d0f040509072)
+
+
+
+
+Clase Usuario
+Atributos privados: id, nombre, correo, contrasena. Validaciones: correo validado mediante expresión regular. Contrasena debe tener al menos 6 caracteres.
+
+![image](https://github.com/user-attachments/assets/69d72dbb-e957-48a4-9cdf-5903f5b97be3)
+
+![image](https://github.com/user-attachments/assets/bdd68876-b182-431b-8789-87137b8fc59b)
+
+
+
+
+Clase Carrito
+Atributo Productos encapsulado con propiedad private set. Métodos públicos para agregar productos (por objeto, por ID simulado, por nombre y precio). Cálculo del Total encapsulado a través de una propiedad readonly.
+
+![image](https://github.com/user-attachments/assets/86516b09-8404-4daa-b4e4-f2e62d85d7e1)
+
+![image](https://github.com/user-attachments/assets/5118ed0a-ccf4-499e-8494-4b7b5acc5498)
+
+
+
+Abstracción Aplicada
+Clase base abstracta: Item
+Define propiedades comunes: Id, Nombre, Precio. Constructor protegido con validaciones. Método abstracto: MostrarDetalle().
+
+![image](https://github.com/user-attachments/assets/461c28d8-eb73-483d-a41b-defcac8bb7b5)
+
+
+
+Clases derivadas:
+ProductoFisico 
+Propiedades adicionales: Descripcion, Stock. Implementa MostrarDetalle() con detalles de stock.
+
+![image](https://github.com/user-attachments/assets/38f4ad57-07d4-4bc1-92ab-2b6b63888823)
+
+
+ProductoDigital
+Propiedad adicional: UrlDescarga. Implementa MostrarDetalle() con detalles de descarga.
+
+![image](https://github.com/user-attachments/assets/5dfe818b-9d03-47b4-a20e-ea0622970f28)
+
+Con esto concluye la actividad SEM5 - Tarea: Asignación No. 5 Aplicación de Encapsulamiento y Abstracción
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 SEMANA No. 4 – Pilares de la Programación Orientada a Objetos - Polimorfismo y sobrecarga
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
