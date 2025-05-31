@@ -6,7 +6,7 @@ Esta asignación consiste en aplicar los principios de **abstracción** e **inte
 
 
 Se sigue aplicando una arquitectura limpia en capas, respetando las dependencias unidireccionales:  
-`Services.Core` 🔁 `Services.Infrastructure`.
+`Services.Core`  `Services.Infrastructure`.
 
 ## Estructura de Capas
 
