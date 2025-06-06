@@ -1,3 +1,27 @@
+Asignación No. 7 Implementación de Patrones de Diseño Singleton, Factory, y Observer
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Esta asignación consiste implementar tres patrones de diseño en el contexto de un sistema e-Commerce:
+
+Singleton → Para una clase de gestión central, como un gestor de configuración del sistema.
+
+Factory → Para crear distintos tipos de productos o usuarios, simplificando su creación según datos de entrada.
+
+Observer → Para manejar eventos como cambios en el estado de pedidos o actualizaciones del inventario.
+
+1- Patrón Singleton
+La primera parte consiste en implementar una clase ConfiguracionSistema con el patrón Singleton, lo que implica:
+
+Constructor privado para evitar instanciación directa. Una propiedad estática (Instance) que controle la única instancia disponible. Una inicialización segura y perezosa (lazy) para crear la instancia solo cuando sea necesaria.
+
+Esta clase contendrá configuraciones clave del sistema como: Cadena de conexión a la base de datos.Configuración de UI (idioma, tema).Parámetros generales del sistema e-Commerce, como se aprecia en lam siguiente imagen
+
+![image](https://github.com/user-attachments/assets/5da32a42-c75a-4ac0-914c-30dbc881ceab)
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 SEM6 - Tarea: Asignación No. 6 Implementación de Interfaces y Clases Abstractas
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
