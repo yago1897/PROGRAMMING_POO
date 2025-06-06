@@ -1,3 +1,110 @@
+SEM6 - Tarea: Asignación No. 6 Implementación de Interfaces y Clases Abstractas
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Esta asignación consiste en aplicar los principios de **abstracción** e **interfaces** en un sistema de gestión de inventario, donde se define una clase abstracta `GestorInventario` con operaciones generales para la administración de productos, y una interfaz `IProductoBase` que actúa como contrato base para las propiedades de un producto.
+
+
+
+Se sigue aplicando una arquitectura limpia en capas, respetando las dependencias unidireccionales:  
+`Services.Core`  `Services.Infrastructure`.
+
+## Estructura de Capas
+
+- **`Services.Core`**: Contiene clases abstractas e interfaces que definen los contratos generales del dominio.
+- **`Services.Infrastructure`**: Implementa las clases concretas de los servicios, como la gestión física del inventario.
+
+---
+
+## Interfaces y Clases Abstractas
+
+### Interfaz: `IProductoBase`
+Ubicación: `Services.Core.Clases_abstractas`
+
+Define las propiedades base de un producto:
+
+### csharp
+public interface IProductoBase
+{
+    int Id { get; set; }
+    string Nombre { get; set; }
+    string Descripcion { get; set; }
+    decimal Precio { get; set; }
+    int Stock { get; set; }
+}
+
+Clase abstracta: GestorInventario
+Ubicación: Services.Core.Clases_abstractas
+
+Define operaciones generales de inventario, usando la interfaz IProductoBase: como se aprecia en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/0924c992-a54a-48f3-bbc1-5835566192d7)
+
+Clases Implementadas
+Clase: Producto
+Ubicación: Services.Infrastructure.Entidades
+
+Implementa la interfaz IProductoBase y aplica encapsulamiento y validaciones: como se ve en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/4136991a-5aaa-4b10-8f72-645c465a4fb5)
+
+Clase: InventarioFisico
+Ubicación: Services.Infrastructure.Services
+
+Implementa la lógica del inventario sobre la clase Producto, usando la clase abstracta GestorInventario: como se aprecia en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/83fc7fdf-0c68-4322-82df-5d36821b1a4c)
+
+
+Clase: InventarioDigital
+Ubicación: Services.Infrastructure.Services
+
+Implementa la lógica del inventario sobre la clase Producto, usando la clase abstracta GestorInventario: como se ve en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/47546d24-d807-4f6d-8550-9f7d7288c3d3)
+
+Uso de Interfaces para Procesos de Pago.
+
+En esta parte del proyecto, aplicamos el principio de abstracción mediante la creación de una interfaz que representa el comportamiento común de diferentes formas de pago. Este enfoque permite una arquitectura extensible y desacoplada.
+
+ Interfaz IProcesoPago
+ Define el contrato para cualquier forma de pago en el sistema.
+ Expone un único método: ProcesarPago, que acepta un monto a pagar. Como se aprecia en la imagen.
+ 
+ ![image](https://github.com/user-attachments/assets/3d4f7c9e-9d5b-4b8e-8c5b-67947fce2765)
+
+ Clase PagoTarjeta.
+ Implementa IProcesoPago.
+ Simula el procesamiento de un pago mediante tarjeta de crédito. Como se aprecia en la imagen.
+
+ ![image](https://github.com/user-attachments/assets/2df4fe5c-47f5-428e-a3b9-93625dffaf5e)
+
+ Clase PagoPayPal
+ También implementa IProcesoPago.
+ Simula el procesamiento de un pago utilizando PayPal. Como se ve en la imagen.
+
+ ![image](https://github.com/user-attachments/assets/79ed7d68-849a-4476-830e-41917852b4aa)
+ 
+Ventajas del diseño
+Extensibilidad: Agregar nuevos métodos de pago (como PagoEfectivo o PagoCripto) solo requiere crear una nueva clase que implemente IProcesoPago.
+
+Polimorfismo: Permite trabajar con cualquier implementación sin necesidad de conocer su tipo exacto.
+
+Desacoplamiento: Reduce dependencias entre componentes de alto y bajo nivel (principio de inversión de dependencias, SOLID).
+ 
+
+Con esto concluye la actividad SEM6 - Tarea: Asignación No. 6 Implementación de Interfaces y Clases Abstractas
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+
+
+
+
+
+
+
 SEM5 - Tarea: Asignación No. 5 Aplicación de Encapsulamiento y Abstracción
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
