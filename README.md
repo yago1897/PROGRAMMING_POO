@@ -18,6 +18,11 @@ Esta clase contendrá configuraciones clave del sistema como: Cadena de conexió
 
 ![image](https://github.com/user-attachments/assets/5da32a42-c75a-4ac0-914c-30dbc881ceab)
 
+Y en la siguiente imagen vemos un ejemplo de como se usa
+
+![image](https://github.com/user-attachments/assets/d2558154-3fab-4684-a427-919d6d2e7062)
+
+
 
 
 
