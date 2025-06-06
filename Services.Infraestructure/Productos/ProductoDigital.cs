@@ -8,21 +8,14 @@ using System.Threading.Tasks;
 
 namespace Services.Infraestructure.Productos
 {
-    public class ProductoDigital : IItem
+    public class ProductoDigital : Producto
     {
-        public string UrlDescarga { get; set; }
+        public string? UrlDescarga { get; set; }
 
-        public ProductoDigital(int id, string nombre, decimal precio, string urlDescarga)
-            : base(id, nombre, precio)
-        {
-            UrlDescarga = string.IsNullOrWhiteSpace(urlDescarga)
-                ? throw new ArgumentException("Debe proporcionar una URL válida.")
-                : urlDescarga;
-        }
 
-        public override string MostrarDetalle()
-        {
-            return $"Producto Digital: {Nombre}, Precio: {Precio}, Descarga: {UrlDescarga}";
-        }
+
+    
+
+        public ProductoDigital() : base(0, "", "",0,0) { }// ← este es el constructor que necesitas
     }
 }

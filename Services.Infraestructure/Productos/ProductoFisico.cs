@@ -8,22 +8,14 @@ using System.Threading.Tasks;
 
 namespace Services.Infraestructure.Productos
 {
-    public class ProductoFisico : IItem
+    public class ProductoFisico : Producto
     {
-        public int Stock { get; set; }
-        public string Descripcion { get; set; }
+        public float Peso { get; set; }
 
-        public ProductoFisico(int id, string nombre, decimal precio, string descripcion, int stock)
-            : base(id, nombre, precio)
-        {
-            Descripcion = descripcion ?? "";
-            if (stock < 0) throw new ArgumentException("El stock no puede ser negativo.");
-            Stock = stock;
-        }
 
-        public override string MostrarDetalle()
-        {
-            return $"Producto Físico: {Nombre}, Precio: {Precio}, Stock: {Stock}";
-        }
+
+
+
+        public ProductoFisico() : base(0, "", "", 0, 0) { }// ← este es el constructor que necesitas
     }
 }

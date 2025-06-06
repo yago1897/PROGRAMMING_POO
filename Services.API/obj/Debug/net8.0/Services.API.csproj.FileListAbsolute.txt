@@ -7,6 +7,11 @@ C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Servi
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.API.runtimeconfig.json
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.API.dll
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.API.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.Core.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.Infraestructure.dll
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.Infraestructure.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\bin\Debug\net8.0\Services.Core.pdb
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.csproj.AssemblyReference.cache
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.AssemblyInfoInputs.cache
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.AssemblyInfo.cs
@@ -28,6 +33,7 @@ C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\stati
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Services.API.props
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.45791026.Up2Date
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.dll
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\refint\Services.API.dll
 C:\Users\Stevens\source\repos\ProgrammingPOO\Services.API\obj\Debug\net8.0\Services.API.pdb
