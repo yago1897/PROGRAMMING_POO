@@ -20,9 +20,23 @@ Esta clase contendrá configuraciones clave del sistema como: Cadena de conexió
 
 Y en la siguiente imagen vemos un ejemplo de como se usa, se crea una clase llamada "ServicioAutenticacion" donde tiene un método llamado "IniciarSesion" donde se accede a la única instancia. La ventaja de usarlo así es que la configuración n o se pasan entre clases, simplemente se accede desde ConfiguracionSistema.Instancia. Siempre se usa la misma instancia en todo el sistema.
 
-
+En conclusión la instancia es compartida globalmente, por lo que cualquier cambio se refleja en todo el sistema.
 
 ![image](https://github.com/user-attachments/assets/d2558154-3fab-4684-a427-919d6d2e7062)
+
+2- Patrón Fáctory 
+Se implementa una clase FabricaEntidades que actúa como fábrica de objetos para centralizar la creación de instancias de productos (ProductoDigital, ProductoFisico) y usuarios (Cliente, Administrador), manteniendo así el principio de abierto/cerrado (OCP) y facilitando la extensión del sistema con nuevos tipos de entidades sin modificar código existente.
+Se sigue usando una arquitectura limpia.
+Se mantiene el principio de dependencias unidireccionales: Services.Infrastructure depende de Services.Core, no al revés.
+FabricaEntidades se ubica correctamente en la capa de Services.Infrastructure, donde tiene visibilidad directa de las implementaciones concretas.
+
+Se crea la clase "FabricaEntidades"
+Responsabilidad Única: cada método se encarga de una familia de objetos (productos o usuarios).
+
+Extensibilidad: agregar nuevos tipos solo requiere extender el enum y el switch.
+
+![image](https://github.com/user-attachments/assets/3e6eac6e-0e9c-4a30-a43e-ffca169ddbd5)
+
 
 
 
