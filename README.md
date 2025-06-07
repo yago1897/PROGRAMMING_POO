@@ -9,6 +9,8 @@ Factory → Para crear distintos tipos de productos o usuarios, simplificando su
 
 Observer → Para manejar eventos como cambios en el estado de pedidos o actualizaciones del inventario.
 
+A continuación Vamos a ver el detalle de cada uno de estos patrones
+
 1- Patrón Singleton
 La primera parte consiste en implementar una clase ConfiguracionSistema con el patrón Singleton, lo que implica:
 
