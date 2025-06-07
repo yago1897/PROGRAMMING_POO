@@ -30,12 +30,19 @@ Se sigue usando una arquitectura limpia.
 Se mantiene el principio de dependencias unidireccionales: Services.Infrastructure depende de Services.Core, no al revés.
 FabricaEntidades se ubica correctamente en la capa de Services.Infrastructure, donde tiene visibilidad directa de las implementaciones concretas.
 
-Se crea la clase "FabricaEntidades"
+Se crea la clase "FabricaEntidades" como se aprecia en la imagen 
 Responsabilidad Única: cada método se encarga de una familia de objetos (productos o usuarios).
 
 Extensibilidad: agregar nuevos tipos solo requiere extender el enum y el switch.
 
 ![image](https://github.com/user-attachments/assets/3e6eac6e-0e9c-4a30-a43e-ffca169ddbd5)
+
+Beneficios del patrón Fáctory
+El patrón Factory centraliza la lógica de creación de objetos.
+Promueve la mantenibilidad, testabilidad y extensibilidad del sistema.
+Compatible con principios SOLID y la estructura de Clean Architecture aplicada en el proyecto.
+
+
 
 
 
