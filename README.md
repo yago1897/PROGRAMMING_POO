@@ -44,6 +44,51 @@ El patrón Factory centraliza la lógica de creación de objetos.
 Promueve la mantenibilidad, testabilidad y extensibilidad del sistema.
 Compatible con principios SOLID y la estructura de Clean Architecture aplicada en el proyecto.
 
+3- Patrón Observer
+
+El propósito sería implementar un mecanismo de suscripción y notificación desacoplado para que distintos componentes del sistema (como la interfaz de usuario o el módulo de inventario) puedan reaccionar automáticamente a eventos como cambios en el estado de un pedido sin acoplarse directamente entre ellos como se vera a continuación
+
+Se crea la interfaz IObservador y la interfaz "ISujeto" como se observa en las imágenes
+
+![image](https://github.com/user-attachments/assets/f5f24ec9-85b8-429b-874f-8ad91552b80b)
+
+![image](https://github.com/user-attachments/assets/7333bd5c-5bc5-42df-9d8d-0c795aa87215)
+
+
+Sujeto concreto: Gestor de pedidos, en esta clase se implementa la interfaz "ISujeto"
+
+![image](https://github.com/user-attachments/assets/72e8cac7-cbe6-4301-840c-983adcf95206)
+
+Observadores concretos
+
+![image](https://github.com/user-attachments/assets/e3d9012f-4b7d-4d95-9ce2-23fca8bb6f96)
+
+![image](https://github.com/user-attachments/assets/9f81584f-59ec-4115-8522-d14aabfddb9f)
+
+Y para efectos de prueba, se realiza el ejercicio de la siguiente manera como se verá a continuación:
+En la clase "program.cs" de la Capa de "Services-API" como se aprecia en la imagen
+
+![image](https://github.com/user-attachments/assets/ab52289d-190d-4d12-a93a-40b82578ac63)
+
+Se ejecuta la aplicación presionando "F5" o dando "Click" al botón que se ve en la siguiente imagen, en la aprte superior 
+
+![image](https://github.com/user-attachments/assets/9b10d11f-ff4b-4759-8fe3-3bdcc9913c8f)
+
+
+Se prueba con un cliente llamado "POSMAN" conocido por todos, y se expone el EndPoint que se ve en la imagen, elcual es "https://localhost:7174/test/observer", el método que utiliza en un "GET", y al presionar el botón de "Send" que está en la parte superior derecha, vemos que se obtiene un mensaje el cual dice "Se ejecutó la prueba del patrón Observer. Revisa la salida de la consola.". Ahora para ver si realmente se ejecutó con exito la prueba hay que revisar la consola de Visual Studio 2022 como lo dice el mensaje de salida en posman
+
+![image](https://github.com/user-attachments/assets/6cb49fa2-6e09-4525-8f5c-779fc864f6c4)
+
+Y al revisar la consola se evidencia que se ejecuto exitosamente y significa que el patrón Observer está funcionando correctamente como se esperaba
+
+![image](https://github.com/user-attachments/assets/fc1cc311-9595-44bc-a7a6-d74b50ea4c35)
+
+
+
+Con esto concluye la actividad Asignación No. 7 Implementación de Patrones de Diseño Singleton, Factory, y Observer
+
+
+
 
 
 
