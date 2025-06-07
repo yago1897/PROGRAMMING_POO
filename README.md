@@ -85,7 +85,7 @@ Y al revisar la consola se evidencia que se ejecuto exitosamente y significa que
 
 
 
-Con esto concluye la actividad Asignación No. 7 Implementación de Patrones de Diseño Singleton, Factory, y Observer
+Con esto concluye la actividad Asignación No. 7 Implementación de Patrones de Diseño Singleton, Factory, y Observer manteniendo una arquitectura limpia y desacoplada
 
 
 
