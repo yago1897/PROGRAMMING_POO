@@ -23,15 +23,15 @@ PagoFallidoException
 UsuarioNoAutenticadoException
 ![image](https://github.com/user-attachments/assets/f032e7d0-de76-4d1c-920e-007826da466d)
 
-Y la excepción "ProductoNoDisponibleException" se implementa en la siguiente clase "GestorProductos.cs" como se aprecia en la siguiente imagen
+La excepción "ProductoNoDisponibleException" se implementa en la siguiente clase "GestorProductos.cs" como se aprecia en la siguiente imagen
 
 ![image](https://github.com/user-attachments/assets/5ae15c9e-ceda-4a32-926f-2b6416629d42)
 
-Y la excepción "UsuarioNoAutenticadoException" se implementa en la siguiente clase "Carrito.cs" como se aprecia en la siguiente imagen
+La excepción "UsuarioNoAutenticadoException" se implementa en la siguiente clase "Carrito.cs" como se aprecia en la siguiente imagen
 
 ![image](https://github.com/user-attachments/assets/e0ff679a-85d9-4f63-8096-a83fc5027ebb)
 
-Y la excepción "PagoFallidoException" se implementa en la siguiente clase "PagoTargeta.cs" como se aprecia en la siguiente imagen
+La excepción "PagoFallidoException" se implementa en la siguiente clase "PagoTargeta.cs" como se aprecia en la siguiente imagen
 
 ![image](https://github.com/user-attachments/assets/ecea20bf-fd70-4fd0-bc8c-bce9ba5fecca)
 
@@ -54,7 +54,7 @@ Excepciones esperadas ante datos incorrectos.
 Comportamiento ante usuarios no autenticados.
 
 Se organizó cada conjunto de pruebas en archivos separados (ProductoTests.cs, UsuarioTests.cs, CarritoTests.cs, etc.), siguiendo buenas prácticas de mantenimiento.
-Resultado: Se ejecutaron 14 pruebas unitarias con 100% de éxito, lo que garantiza que los componentes críticos de la lógica de negocio funcionan correctamente ante diferentes escenarios.
+Resultado: Se ejecutaron todas las pruebas unitarias con 100% de éxito, lo que garantiza que los componentes críticos de la lógica de negocio funcionan correctamente ante diferentes escenarios.
 A continuación se evidencian las pruebas mencionadas anteriormente
 
 Se ejecuta las pruebas utilizando el framework NUnit de la clase "ProductoTest" y se evidencia que todas fueron corretas como se aprecia en la imagen
