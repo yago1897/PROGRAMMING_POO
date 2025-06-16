@@ -1,4 +1,5 @@
-﻿using Services.Core.Interfaces;
+﻿using Services.Core.Excepciones;
+using Services.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,19 @@ namespace Services.Infraestructure.Servicios
         public void ConfirmarPago()
         {
             Console.WriteLine("Pago con tarjeta confirmado.");
+        }
+
+        public void ProcesarPago(decimal monto)
+        {
+            // Simulación: falla el pago
+            bool pagoExitoso = false;
+
+            if (!pagoExitoso)
+            {
+                throw new PagoFallidoException($"No se pudo procesar el pago de {monto:C} con tarjeta.");
+            }
+
+            
         }
     }
 }

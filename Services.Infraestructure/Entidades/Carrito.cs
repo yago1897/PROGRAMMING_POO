@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services.Core.Excepciones;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,6 +58,16 @@ namespace Services.Infraestructure.Entidades
         private decimal CalcularTotal()
         {
             return productos.Sum(p => p.Precio);
+        }
+
+        public void AñadirProducto(int productoId, int cantidad, Usuario usuario)
+        {
+            if (usuario == null || !usuario.EstaAutenticado)
+            {
+                throw new UsuarioNoAutenticadoException("Debe iniciar sesión para añadir productos al carrito.");
+            }
+
+            
         }
     }
 

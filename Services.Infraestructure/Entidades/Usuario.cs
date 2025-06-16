@@ -15,6 +15,9 @@ namespace Services.Infraestructure.Entidades
         private string correo;
         private string contrasena;
 
+        // NUEVA PROPIEDAD:
+        public bool EstaAutenticado { get; set; } = true;
+
         public int Id
         {
             get => id;

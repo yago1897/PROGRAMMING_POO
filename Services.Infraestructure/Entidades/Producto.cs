@@ -1,4 +1,5 @@
-﻿using Services.Core.Interfaces;
+﻿using Services.Core.Excepciones;
+using Services.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,6 +80,14 @@ namespace Services.Infraestructure.Entidades
         public virtual string MostrarDetalle()
         {
             return $"Producto: {Nombre}, Precio: {Precio}";
+        }
+
+        public void ActualizarStock(int cantidad)
+        {
+            if (cantidad < 0 && Stock + cantidad < 0)
+                throw new ProductoNoDisponibleException("Stock insuficiente para el producto solicitado.");
+
+            Stock += cantidad;
         }
     }
 
