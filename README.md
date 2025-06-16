@@ -1,3 +1,85 @@
+SEM8 - Tarea: Asignación No. 8 Implementación de Manejo de Excepciones y Pruebas Unitarias
+
+Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
+Esta asignación consiste en la Implementación de Manejo de Excepciones y Pruebas Unitarias de un sistema e-Commerce:
+
+1) - En esta solución se implementaron excepciones personalizadas para capturar y manejar errores específicos del dominio de la plataforma e-Commerce. Estas excepciones mejoran la claridad y el control del flujo del programa, facilitando la detección de fallos previsibles.
+
+Excepciones implementadas:
+ProductoNoDisponibleException: Se lanza cuando se intenta acceder o utilizar un producto que no está disponible.
+
+PagoFallidoException: Se utiliza para indicar que ha ocurrido un error durante el procesamiento del pago.
+
+UsuarioNoAutenticadoException: Se lanza si un usuario intenta realizar una acción restringida sin estar autenticado correctamente.
+
+Estas excepciones heredan de la clase base Exception y permiten centralizar el tratamiento de errores, hacer más robusta la lógica de negocio y mejorar el mantenimiento del sistema como se verá en las siguientes imágenes
+
+ProductoNoDisponibleException
+![image](https://github.com/user-attachments/assets/b107f0bf-a30d-44ec-8b76-3bd82eb53166)
+
+PagoFallidoException
+![image](https://github.com/user-attachments/assets/84e1f515-7bcd-40d1-b2c0-974d6af86c3f)
+
+UsuarioNoAutenticadoException
+![image](https://github.com/user-attachments/assets/f032e7d0-de76-4d1c-920e-007826da466d)
+
+Y la excepción "ProductoNoDisponibleException" se implementa en la siguiente clase "GestorProductos.cs" como se aprecia en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/5ae15c9e-ceda-4a32-926f-2b6416629d42)
+
+Y la excepción "UsuarioNoAutenticadoException" se implementa en la siguiente clase "Carrito.cs" como se aprecia en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/e0ff679a-85d9-4f63-8096-a83fc5027ebb)
+
+Y la excepción "PagoFallidoException" se implementa en la siguiente clase "PagoTargeta.cs" como se aprecia en la siguiente imagen
+
+![image](https://github.com/user-attachments/assets/ecea20bf-fd70-4fd0-bc8c-bce9ba5fecca)
+
+
+2) - Pruebas Unitarias con NUnit
+  
+Se desarrolló un conjunto de pruebas unitarias utilizando el framework NUnit para garantizar el correcto funcionamiento de las clases principales (Producto, Usuario, y Carrito) del dominio, especialmente en lo relacionado con validaciones y el manejo de errores. 
+
+Características de las pruebas:
+Se creó un proyecto de pruebas independiente: Services.Tests.
+
+Las pruebas cubren constructores, validaciones y lógica interna de las clases Producto, Usuario y Carrito.
+
+Se validan casos como:
+
+Creación válida e inválida de objetos.
+
+Excepciones esperadas ante datos incorrectos.
+
+Comportamiento ante usuarios no autenticados.
+
+Se organizó cada conjunto de pruebas en archivos separados (ProductoTests.cs, UsuarioTests.cs, CarritoTests.cs, etc.), siguiendo buenas prácticas de mantenimiento.
+Resultado: Se ejecutaron 14 pruebas unitarias con 100% de éxito, lo que garantiza que los componentes críticos de la lógica de negocio funcionan correctamente ante diferentes escenarios.
+A continuación se evidencian las pruebas mencionadas anteriormente
+
+Se ejecuta las pruebas utilizando el framework NUnit de la clase "ProductoTest" y se evidencia que todas fueron corretas como se aprecia en la imagen
+
+![image](https://github.com/user-attachments/assets/2d619d55-b9d9-4bca-addf-8f2f330d67fe)
+
+
+Se ejecuta las pruebas utilizando el framework NUnit de la clase "UsuarioTest" y se evidencia que todas fueron corretas como se aprecia en la imagen
+
+![image](https://github.com/user-attachments/assets/6f95e7c9-6035-4dcb-a600-1798498caede)
+
+
+Se ejecuta las pruebas utilizando el framework NUnit de la clase "CarritoTest" y se evidencia que todas fueron corretas como se aprecia en la imagen
+
+![image](https://github.com/user-attachments/assets/2ad44514-965d-4b0b-9e14-1d0545e9e593)
+
+Con esto concluye la actividad SEM8 - Tarea: Asignación No. 8 Implementación de Manejo de Excepciones y Pruebas Unitarias cumpliendo con los requerimientos solicitados en la actividad.
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Asignación No. 7 Implementación de Patrones de Diseño Singleton, Factory, y Observer
 
 Continuando con la actividad realizada en entorno Visual Studio 2022, y especificamente en lenguaje C#.
